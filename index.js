@@ -15,7 +15,7 @@ const { program } = require("commander");
 console.log(commitMessage);
 
 const firstCommand = "git add .";
-const secondCommand = "git commit -m '${commitMessage}'";
+const secondCommand = "git commit -m ${commitMessage}";
 for (i = 0; i < 14; i++) {}
 const thirdCommand = "git push origin master";
 
