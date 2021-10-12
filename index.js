@@ -5,21 +5,20 @@ var currentBranch = "master";
 shell.echo("hello world");
 console.log(process.argv);
 const length = process.argv.length;
-var commitMessage = "";
-anotherCommitMessage = process.argv.slice(2);
+var commitMessage = process.argv[2];
 const { program } = require("commander");
-const conf = new (require("conf"))();
-const chalk = require("chalk");
 // adding branch config
 
-for (i = 2; i < length; i++) {
-  commitMessage = commitMessage + process.argv[i] + " ";
-}
+// for (i = 2; i < length; i++) {
+//   commitMessage = commitMessage + process.argv[i] + " ";
+// }
 console.log(commitMessage);
 
 const firstCommand = "git add .";
-const secondCommand = "git commit -m " + commitMessage + " ";
+const secondCommand = "git commit -m " + "commitMessage";
 const thirdCommand = "git push origin master";
+
+console.log(secondCommand);
 // Commands
 // 1)git add .
 // 2)git commit -m ""
@@ -51,4 +50,3 @@ const push = () => {
 push();
 
 console.log("Kanye West is the best");
-console.log("I am a God");
