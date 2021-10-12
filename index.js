@@ -6,9 +6,14 @@ shell.echo("hello world");
 console.log(process.argv);
 const length = process.argv.length;
 var commitMessage = "";
+anotherCommitMessage = process.argv.slice(2);
+const { program } = require("commander");
+const conf = new (require("conf"))();
+const chalk = require("chalk");
+// adding branch config
 
 for (i = 2; i < length; i++) {
-  commitMessage = commitMessage + process.argv[i];
+  commitMessage = commitMessage + process.argv[i] + " ";
 }
 console.log(commitMessage);
 
@@ -28,19 +33,21 @@ const thirdCommand = "git push origin master";
 // 5) Inbuilt feature to save the code when file changed.(maybe another package)
 // 6) Can use it also directly from vs code rather than CLI by making a file saving that command and writing commmit messages.
 
-const run = () => {
+const push = () => {
   shell.exec(firstCommand);
   shell.exec(secondCommand);
   shell.exec(thirdCommand);
 };
 
-if (process.argv[0] == "quick" && process.argv[1] == "push") {
-  run();
-}
+// program
+//   .command("push <commitMessage>")
+//   .description("Push a commit message")
+//   .action(push);
+
+// program.parse();
 
 // gitquickpusher-1.0.0.tgz
 
-run();
+push();
 
-console.log("I am a God!!");
 console.log("Kanye West is the best");

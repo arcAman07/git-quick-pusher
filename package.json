@@ -1,10 +1,11 @@
 {
-  "name": "gitquickpushers",
+  "name": "gitquickpusher",
   "version": "1.0.0",
   "description": "A simple easy to use command line tool to push your code to your github repositories in a single line.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -16,14 +17,20 @@
     "push"
   ],
   "author": "Aman Sharma",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/arcAman07/git-quick-pusher/issues"
   },
+  "bin": {
+    "quick": "index.js"
+  },
   "homepage": "https://github.com/arcAman07/git-quick-pusher#readme",
   "dependencies": {
+    "chalk": "^4.1.2",
     "color": "^4.0.1",
-    "gitquickpusher": "file:gitquickpusher-1.0.0.tgz",
+    "commander": "^8.2.0",
+    "conf": "^10.0.3",
     "shelljs": "^0.8.4"
-  }
+  },
+  "devDependencies": {}
 }
