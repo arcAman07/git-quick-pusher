@@ -8,7 +8,7 @@ const length = process.argv.length;
 var commitMessage = "";
 
 for (i = 2; i < length; i++) {
-  commitMessage = commitMessage + process.argv[i] + " ";
+  commitMessage = commitMessage + process.argv[i];
 }
 console.log(commitMessage);
 
@@ -41,3 +41,4 @@ const run = () => {
 run();
 
 console.log("I am a God!!");
+console.log("Kanye West is the best");
