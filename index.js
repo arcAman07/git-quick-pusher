@@ -2,7 +2,12 @@
 const shell = require("shelljs");
 const Color = require("color");
 var currentBranch = "master";
-var commitMessage;
+shell.echo("hello world");
+console.log(process.argv);
+var commitMessage = process.argv[2];
+const firstCommand = "git add .";
+const secondCommand = "git commit -m " + commitMessage;
+const thirdCommand = "git push origin master";
 // Commands
 // 1)git add .
 // 2)git commit -m ""
@@ -15,3 +20,11 @@ var commitMessage;
 //4) Other git commands helpline like merge, pull, fetch , etc
 // 5) Inbuilt feature to save the code when file changed.(maybe another package)
 // 6) Can use it also directly from vs code rather than CLI by making a file saving that command and writing commmit messages.
+
+const run = () => {
+  shell.exec(firstCommand);
+  shell.exec(secondCommand);
+  shell.exec(thirdCommand);
+};
+
+run();
