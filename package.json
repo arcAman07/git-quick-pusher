@@ -1,5 +1,5 @@
 {
-  "name": "gitquickpusher",
+  "name": "gitquickpushers",
   "version": "1.0.0",
   "description": "A simple easy to use command line tool to push your code to your github repositories in a single line.",
   "main": "index.js",
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/arcAman07/git-quick-pusher#readme",
   "dependencies": {
     "color": "^4.0.1",
+    "gitquickpusher": "file:gitquickpusher-1.0.0.tgz",
     "shelljs": "^0.8.4"
   }
 }

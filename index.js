@@ -13,7 +13,7 @@ for (i = 2; i < length; i++) {
 console.log(commitMessage);
 
 const firstCommand = "git add .";
-const secondCommand = "git commit -m " + commitMessage;
+const secondCommand = "git commit -m " + commitMessage + " ";
 const thirdCommand = "git push origin master";
 // Commands
 // 1)git add .
@@ -34,9 +34,11 @@ const run = () => {
   shell.exec(thirdCommand);
 };
 
-// if (process.argv[0] == "quick" && process.argv[1] == "push") {
-//   run();
-// }
+if (process.argv[0] == "quick" && process.argv[1] == "push") {
+  run();
+}
+
+// gitquickpusher-1.0.0.tgz
 
 run();
 
