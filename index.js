@@ -4,7 +4,14 @@ const Color = require("color");
 var currentBranch = "master";
 shell.echo("hello world");
 console.log(process.argv);
-var commitMessage = process.argv[2];
+const length = process.argv.length;
+var commitMessage = "";
+
+for (i = 2; i < length; i++) {
+  commitMessage = commitMessage + process.argv[i] + " ";
+}
+console.log(commitMessage);
+
 const firstCommand = "git add .";
 const secondCommand = "git commit -m " + commitMessage;
 const thirdCommand = "git push origin master";
@@ -27,4 +34,10 @@ const run = () => {
   shell.exec(thirdCommand);
 };
 
+// if (process.argv[0] == "quick" && process.argv[1] == "push") {
+//   run();
+// }
+
 run();
+
+console.log("I am a God!!");
