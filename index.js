@@ -51,3 +51,4 @@ const push = () => {
 push();
 
 console.log("Kanye West is the best");
+console.log("I am a God");
