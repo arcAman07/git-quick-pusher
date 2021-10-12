@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/arcAman07/git-quick-pusher#readme",
   "dependencies": {
+    "color": "^4.0.1",
     "shelljs": "^0.8.4"
   }
 }
