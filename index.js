@@ -55,9 +55,11 @@ const branch = async () => {
   const branchCommand = "git branch " + currentBranch;
   const secondBranchCommand = "git push -u origin " + currentBranch;
   await shell.exec(branchCommand);
-  await shell.exec(secondBranchCommand);
+  // await shell.exec(secondBranchCommand);
   console.log(currentBranch);
 };
+
+const help = async () => {};
 
 if (process.argv[2] === "push") {
   push();
@@ -70,3 +72,18 @@ if (process.argv[2] === "branch") {
 if (process.argv[2] === "set") {
   set();
 }
+
+if (process.argv[3] === "--help") {
+  help();
+}
+// program
+//   .command('push "<Commit Message>"')
+//   .description("List all the TODO tasks");
+
+// program
+//   .command('set "<Commit Message>" <Repository Url>')
+//   .description("Add a new TODO task");
+
+// program.command("branch <Branch Name>").description("Mark commands done");
+
+program.parse();
