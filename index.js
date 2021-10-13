@@ -26,7 +26,7 @@ console.log(process.argv[3]);
 // 3)git push origin master(branch)
 
 // To push an existing repository
-const quick = async () => {
+const push = async () => {
   commitMessage = process.argv[3];
   const firstCommand = "git add .";
   const secondCommand = `git commit -m "${commitMessage}"`;
@@ -39,7 +39,7 @@ const quick = async () => {
 // First time - connect git to github repository
 //Format - push "commitMessage" url
 
-const push = async () => {
+const set = async () => {
   url = process.argv[3];
   commitMessage = process.argv[2];
   await shell.exec(newFirstCommand);
@@ -53,12 +53,20 @@ const push = async () => {
 // Format - set branchName(currentBranch)
 // default working branch is "master"
 
-const set = async () => {
+const branch = async () => {
   // currentBranch = await process.argv[0];
   await shell.exec((currentBranch = process.argv[1]));
   shell.echo(currentBranch);
 };
 
 if (process.argv[2] === "push") {
-  quick();
+  push();
+}
+
+if (process.argv[2] === "branch") {
+  branch();
+}
+
+if (process.argv[2] === "set") {
+  set();
 }
