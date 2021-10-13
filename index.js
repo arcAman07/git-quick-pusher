@@ -7,7 +7,6 @@ shell.echo("hello world");
 console.log(process.argv);
 const length = process.argv.length;
 var commitMessage = process.argv[2];
-const { program } = require("commander");
 console.log(commitMessage);
 // while remote add origin has been set
 const firstCommand = "git add .";
@@ -24,7 +23,7 @@ console.log(secondCommand);
 // 3)git push origin master(branch)
 
 // To push an existing repository
-const push = async () => {
+const quick = async () => {
   await shell.exec(firstCommand);
   await shell.exec(secondCommand);
   await shell.exec(thirdCommand);
@@ -33,10 +32,17 @@ const push = async () => {
 // First time - connect git to github repository
 //Format - push "commitMessage" url
 
+const push = async () => {
+  currentBranch = await process.argv[1];
+  console.log(currentBranch);
+};
+
 // To set the current branch of the working repo
 // Format - set branchName(currentBranch)
 // default working branch is "master"
 
 // gitquickpusher-1.0.0.tgz
+
+module.exports = quick();
 
 module.exports = push();
