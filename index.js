@@ -12,11 +12,12 @@ console.log(commitMessage);
 const firstCommand = "git add .";
 const secondCommand = `git commit -m "${commitMessage}"`;
 const thirdCommand = "git push origin master";
-
+var url = process.argv[3];
 const newFirstCommand = "git init";
 const newSecondCommand = firstCommand;
 const newThirdCommand = secondCommand;
-
+const newFourthCommand = "git remote add origin" + url;
+const newFifthCommand = thirdCommand;
 //
 
 console.log(secondCommand);
@@ -27,6 +28,7 @@ console.log(secondCommand);
 
 // To push an existing repository
 const quick = async () => {
+  commitMessage = process.argv[2];
   await shell.exec(firstCommand);
   await shell.exec(secondCommand);
   await shell.exec(thirdCommand);
@@ -35,10 +37,15 @@ const quick = async () => {
 // First time - connect git to github repository
 //Format - push "commitMessage" url
 
-// const push = async () => {
-//   currentBranch = await process.argv[1];
-//   console.log(currentBranch);
-// };
+const push = async () => {
+  url = process.argv[3];
+  commitMessage = process.argv[2];
+  await shell.exec(newFirstCommand);
+  await shell.exec(newSecondCommand);
+  await shell.exec(newThirdCommand);
+  await shell.exec(newFourthCommand);
+  await shell.exec(newFifthCommand);
+};
 
 // To set the current branch of the working repo
 // Format - set branchName(currentBranch)
@@ -54,7 +61,8 @@ const set = async () => {
 
 module.exports = quick();
 
-// module.exports = push();
-console.log("Heya");
+set();
+
+module.exports = push();
 
 // module.exports = set();
