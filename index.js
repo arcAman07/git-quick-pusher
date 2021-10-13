@@ -5,9 +5,6 @@ var argv = require("optimist").argv;
 // default branch set is "master"
 var currentBranch = "master";
 console.log(process.argv);
-const length = process.argv.length;
-var commitMessage = process.argv[2];
-console.log(commitMessage);
 console.log(process.argv[3]);
 // while remote add origin has been set
 // const firstCommand = "git add .";
@@ -40,8 +37,18 @@ const push = async () => {
 //Format - push "commitMessage" url
 
 const set = async () => {
-  url = process.argv[3];
-  commitMessage = process.argv[2];
+  var url = process.argv[3];
+  const newFirstCommand = "git init";
+  const newSecondCommand = "git add .";
+  const newThirdCommand = `git commit -m "${commitMessage}"`;
+  const newFourthCommand = "git remote add origin" + url;
+  const newFifthCommand = "git push origin master";
+  var url = process.argv[4];
+  var commitMessage = process.argv[3];
+  console.log(commitMessage);
+  console.log(newFirstCommand);
+  console.log(newThirdCommand);
+  console.log(newFourthCommand);
   await shell.exec(newFirstCommand);
   await shell.exec(newSecondCommand);
   await shell.exec(newThirdCommand);
