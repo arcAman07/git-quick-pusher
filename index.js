@@ -48,6 +48,6 @@ program
 
 // gitquickpusher-1.0.0.tgz
 
-push();
+module.exports = push();
 
 console.log("I am a God!!");
