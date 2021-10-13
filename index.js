@@ -39,15 +39,11 @@ const push = async () => {
   await shell.exec(thirdCommand);
 };
 
-program
-  .command("push <commitMessage>")
-  .description("Push a commit message")
-  .action(push);
-
-// program.parse();
+// program
+//   .command("push <commitMessage>")
+//   .description("Push a commit message")
+//   .action(push);
 
 // gitquickpusher-1.0.0.tgz
 
 module.exports = push();
-
-console.log("I am a God!!");
