@@ -53,7 +53,9 @@ const branch = async () => {
   // currentBranch = await process.argv[0];
   currentBranch = await process.argv[3];
   const branchCommand = "git branch " + currentBranch;
+  const secondBranchCommand = "git push -u origin " + currentBranch;
   await shell.exec(branchCommand);
+  await shell.exec(secondBranchCommand);
   console.log(currentBranch);
 };
 
