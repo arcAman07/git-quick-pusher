@@ -1,5 +1,5 @@
 {
-  "name": "gitquickpusher",
+  "name": "gitquickpush",
   "version": "1.0.0",
   "description": "A simple easy to use command line tool to push your code to your github repositories in a single line.",
   "main": "index.js",
@@ -15,7 +15,9 @@
   "keywords": [
     "git",
     "github",
-    "push"
+    "push",
+    "commit",
+    "branch"
   ],
   "author": "Aman Sharma",
   "license": "MIT",
