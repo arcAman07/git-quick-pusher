@@ -6,6 +6,9 @@ var argv = require("optimist").argv;
 const { program } = require("commander");
 // default branch set is "master"
 var currentBranch = "master";
+
+// Here 0 signifies that there is only one branch that is master and 1 signifies other alternate branches have been set
+var alternateBranchExists = 0;
 console.log(process.argv);
 // Commands
 // 1)git add .
@@ -45,7 +48,7 @@ const set = async () => {
   await shell.exec(newFifthCommand);
 };
 
-// To set the current branch of the working repo and create that branch in the repository
+// To set the current branch of the working repo and create that branch in the repository and push the code to that created branch
 // Format - set branchName(currentBranch)
 // default working branch is "master"
 
@@ -78,6 +81,20 @@ const help = async () => {
   program.parse();
 };
 
+// When you need to push already to an already existing branch other than "master" branch
+// Format quick send <branchName>(currentBranch) <commitMessage>
+
+const send = async () => {
+  currentBranch = await process.argv[3];
+  commitMessage = await process.argv[4];
+  const firstSendCommand = "git add .";
+  const secondSendCommand = `git commit -m "${commitMessage}"`;
+  const thirdSendCommand = "git push -u origin " + currentBranch;
+  await shell.exec(firstSendCommand);
+  await shell.exec(secondSendCommand);
+  await shell.exec(thirdSendCommand);
+};
+
 if (process.argv[2] === "push") {
   push();
 }
@@ -88,6 +105,10 @@ if (process.argv[2] === "branch") {
 
 if (process.argv[2] === "set") {
   set();
+}
+
+if (process.argv[2] === "send") {
+  send();
 }
 
 if (process.argv[3] === "--help") {
