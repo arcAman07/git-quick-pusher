@@ -1,23 +1,21 @@
 #! /usr/bin/env node
 const shell = require("shelljs");
 const Color = require("color");
+// default branch set is "master"
 var currentBranch = "master";
 shell.echo("hello world");
 console.log(process.argv);
 const length = process.argv.length;
 var commitMessage = process.argv[2];
 const { program } = require("commander");
-// adding branch config
-
-// for (i = 2; i < length; i++) {
-//   commitMessage = commitMessage + process.argv[i] + " ";
-// }
 console.log(commitMessage);
-
+// while remote add origin has been set
 const firstCommand = "git add .";
 const secondCommand = `git commit -m "${commitMessage}"`;
 for (i = 0; i < 14; i++) {}
 const thirdCommand = "git push origin master";
+
+//
 
 console.log(secondCommand);
 // Commands
@@ -32,11 +30,12 @@ console.log(secondCommand);
 //4) Other git commands helpline like merge, pull, fetch , etc
 // 5) Inbuilt feature to save the code when file changed.(maybe another package)
 // 6) Can use it also directly from vs code rather than CLI by making a file saving that command and writing commmit messages.
+// 7) Create custom cli through github clone and also make it in it rush(cargo) and golang
 
-const push = () => {
-  shell.exec(firstCommand);
-  shell.exec(secondCommand);
-  shell.exec(thirdCommand);
+const push = async () => {
+  await shell.exec(firstCommand);
+  await shell.exec(secondCommand);
+  await shell.exec(thirdCommand);
 };
 
 program
