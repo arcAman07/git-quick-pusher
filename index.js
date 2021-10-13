@@ -126,12 +126,16 @@ program
 
 program
   .command("set <CommitMessage> <RepositoryUrl>")
-  .description("Add a new TODO task");
+  .description(chalk.magenta("Add a new TODO task"));
 
-program.command("branch <BranchName>").description("Mark commands done");
+program
+  .command("branch <BranchName>")
+  .description(chalk.magenta("Mark commands done"));
 
 // still under development - currently the bugs are being fixed, will be fixed in the new release
 
-program.command("send <BranchName> <CommitMessage>").description("Push ");
+program
+  .command("send <BranchName> <CommitMessage>")
+  .description(chalk.magenta("Push "));
 
 program.parse();
