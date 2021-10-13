@@ -1,22 +1,11 @@
 #! /usr/bin/env node
 const shell = require("shelljs");
 const Color = require("color");
+const chalk = require("chalk");
 var argv = require("optimist").argv;
 // default branch set is "master"
 var currentBranch = "master";
 console.log(process.argv);
-console.log(process.argv[3]);
-// while remote add origin has been set
-// const firstCommand = "git add .";
-// const secondCommand = `git commit -m "${commitMessage}"`;
-// const thirdCommand = "git push origin master";
-// var url = process.argv[3];
-// const newFirstCommand = "git init";
-// const newSecondCommand = firstCommand;
-// const newThirdCommand = secondCommand;
-// const newFourthCommand = "git remote add origin" + url;
-// const newFifthCommand = thirdCommand;
-
 // Commands
 // 1)git add .
 // 2)git commit -m ""
@@ -56,13 +45,15 @@ const set = async () => {
   await shell.exec(newFifthCommand);
 };
 
-// To set the current branch of the working repo
+// To set the current branch of the working repo and create that branch in the repository
 // Format - set branchName(currentBranch)
 // default working branch is "master"
 
 const branch = async () => {
   // currentBranch = await process.argv[0];
   currentBranch = await process.argv[3];
+  const branchCommand = "git branch " + currentBranch;
+  await shell.exec(branchCommand);
   console.log(currentBranch);
 };
 
