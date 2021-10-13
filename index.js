@@ -67,18 +67,34 @@ const branch = async () => {
 
 const help = async () => {
   program
-    .command('push "<CommitMessage>"')
-    .description("List all the TODO tasks");
+    .command("push <CommitMessage>")
+    .description(chalk.magenta("Push your code to an existing repository"));
 
   program
-    .command('set "<CommitMessage>" <RepositoryUrl>')
-    .description("Add a new TODO task");
+    .command("set <CommitMessage> <RepositoryUrl>")
+    .description(
+      chalk.magenta(
+        "Connect git to your repository and setup the initial commit"
+      )
+    );
 
-  program.command("branch <BranchName>").description("Mark commands done");
+  program
+    .command("branch <BranchName>")
+    .description(
+      chalk.magenta(
+        "Create a new branch in your repository and push your code to it"
+      )
+    );
+
+  // still under development - currently the bugs are being fixed, will be fixed in the new release
 
   program
     .command("send <BranchName> <CommitMessage>")
-    .description("Another One");
+    .description(
+      chalk.magenta(
+        "Push your code to an already existing branch in your repository"
+      )
+    );
 
   program.parse();
 };
