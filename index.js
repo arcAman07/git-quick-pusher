@@ -81,14 +81,14 @@ if (process.argv[2] === "set") {
 if (process.argv[3] === "--help") {
   help();
 }
-// program
-//   .command('push "<Commit Message>"')
-//   .description("List all the TODO tasks");
+program
+  .command('push "<CommitMessage>"')
+  .description("List all the TODO tasks");
 
-// program
-//   .command('set "<Commit Message>" <Repository Url>')
-//   .description("Add a new TODO task");
+program
+  .command('set "<CommitMessage>" <RepositoryUrl>')
+  .description("Add a new TODO task");
 
-// program.command("branch <Branch Name>").description("Mark commands done");
+program.command("branch <BranchName>").description("Mark commands done");
 
 program.parse();
