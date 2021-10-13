@@ -87,7 +87,7 @@ const help = async () => {
 
 // When you need to push already to an already existing branch other than "master" branch
 // Format quick send <branchName>(currentBranch) <commitMessage>
-
+// Still not fully functional- Some bugs to fixed which will revamped in the next version
 const send = async () => {
   currentBranch = await process.argv[3];
   commitMessage = await process.argv[4];
