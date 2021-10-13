@@ -3,6 +3,7 @@ const shell = require("shelljs");
 const Color = require("color");
 const chalk = require("chalk");
 var argv = require("optimist").argv;
+const { program } = require("commander");
 // default branch set is "master"
 var currentBranch = "master";
 console.log(process.argv);
@@ -31,7 +32,7 @@ const set = async () => {
   const newFirstCommand = "git init";
   const newSecondCommand = "git add .";
   const newThirdCommand = `git commit -m "${commitMessage}"`;
-  const newFourthCommand = "git remote add origin" + url;
+  const newFourthCommand = "git remote add origin " + url;
   const newFifthCommand = "git push origin " + currentBranch;
   console.log(commitMessage);
   console.log(newFirstCommand);
