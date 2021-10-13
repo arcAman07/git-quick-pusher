@@ -78,6 +78,10 @@ const help = async () => {
 
   program.command("branch <BranchName>").description("Mark commands done");
 
+  program
+    .command("send <BranchName> <CommitMessage>")
+    .description("Another One");
+
   program.parse();
 };
 
@@ -90,6 +94,8 @@ const send = async () => {
   const firstSendCommand = "git add .";
   const secondSendCommand = `git commit -m "${commitMessage}"`;
   const thirdSendCommand = "git push -u origin " + currentBranch;
+  console.log(secondSendCommand);
+  console.log(thirdSendCommand);
   await shell.exec(firstSendCommand);
   await shell.exec(secondSendCommand);
   await shell.exec(thirdSendCommand);
@@ -111,7 +117,7 @@ if (process.argv[2] === "send") {
   send();
 }
 
-if (process.argv[3] === "--help") {
+if (process.argv[2] === "--help") {
   help();
 }
 program.command("push <CommitMessage>").description("List all the TODO tasks");
@@ -121,5 +127,7 @@ program
   .description("Add a new TODO task");
 
 program.command("branch <BranchName>").description("Mark commands done");
+
+program.command("send <BranchName> <CommitMessage>").description("Another One");
 
 program.parse();
