@@ -1,8 +1,6 @@
 #! /usr/bin/env node
 const shell = require("shelljs");
-const Color = require("color");
 const chalk = require("chalk");
-var argv = require("optimist").argv;
 const { program } = require("commander");
 // default branch set is "master"
 var currentBranch = "master";
@@ -122,20 +120,30 @@ if (process.argv[2] === "--help") {
 }
 program
   .command("push <CommitMessage>")
-  .description(chalk.magenta("List all the TODO tasks"));
+  .description(chalk.magenta("Push your code to an existing repository"));
 
 program
   .command("set <CommitMessage> <RepositoryUrl>")
-  .description(chalk.magenta("Add a new TODO task"));
+  .description(
+    chalk.magenta("Connect git to your repository and setup the initial commit")
+  );
 
 program
   .command("branch <BranchName>")
-  .description(chalk.magenta("Mark commands done"));
+  .description(
+    chalk.magenta(
+      "Create a new branch in your repository and push your code to it"
+    )
+  );
 
 // still under development - currently the bugs are being fixed, will be fixed in the new release
 
 program
   .command("send <BranchName> <CommitMessage>")
-  .description(chalk.magenta("Push "));
+  .description(
+    chalk.magenta(
+      "Push your code to an already existing branch in your repository"
+    )
+  );
 
 program.parse();
