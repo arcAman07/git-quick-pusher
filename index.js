@@ -1,4 +1,4 @@
-#! /usr/bin/env node
+#!/usr/bin/env node
 const shell = require("shelljs");
 const Color = require("color");
 var argv = require("optimist").argv;
@@ -55,5 +55,6 @@ const set = async () => {
 module.exports = quick();
 
 // module.exports = push();
+console.log("Heya");
 
 module.exports = set();
