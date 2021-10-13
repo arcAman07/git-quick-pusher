@@ -43,8 +43,9 @@ const quick = async () => {
 // default working branch is "master"
 
 const set = async () => {
-  currentBranch = await process.argv[1];
-  console.log(currentBranch);
+  // currentBranch = await process.argv[0];
+  await shell.exec((currentBranch = process.argv[1]));
+  shell.echo(currentBranch);
 };
 
 // gitquickpusher-1.0.0.tgz
@@ -52,5 +53,7 @@ const set = async () => {
 module.exports = quick();
 
 // module.exports = push();
+
+set();
 
 module.exports = set();
