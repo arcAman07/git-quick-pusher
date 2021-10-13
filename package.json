@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A simple easy to use command line tool to push your code to your github repositories in a single line.",
   "main": "index.js",
+  "preferGlobal": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
@@ -21,13 +22,15 @@
   "bugs": {
     "url": "https://github.com/arcAman07/git-quick-pusher/issues"
   },
-  "bin": {
-    "quick": "index.js"
+  "directories": {
+    "bin": "./bin"
   },
   "homepage": "https://github.com/arcAman07/git-quick-pusher#readme",
   "dependencies": {
     "color": "^4.0.1",
     "commander": "^8.2.0",
+    "global-npm-seed": "^0.1.1",
+    "optimist": "^0.6.1",
     "shelljs": "^0.8.4"
   },
   "devDependencies": {}
