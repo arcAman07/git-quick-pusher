@@ -64,7 +64,19 @@ const branch = async () => {
   console.log(currentBranch);
 };
 
-const help = async () => {};
+const help = async () => {
+  program
+    .command('push "<CommitMessage>"')
+    .description("List all the TODO tasks");
+
+  program
+    .command('set "<CommitMessage>" <RepositoryUrl>')
+    .description("Add a new TODO task");
+
+  program.command("branch <BranchName>").description("Mark commands done");
+
+  program.parse();
+};
 
 if (process.argv[2] === "push") {
   push();
@@ -81,12 +93,10 @@ if (process.argv[2] === "set") {
 if (process.argv[3] === "--help") {
   help();
 }
-program
-  .command('push "<CommitMessage>"')
-  .description("List all the TODO tasks");
+program.command("push <CommitMessage>").description("List all the TODO tasks");
 
 program
-  .command('set "<CommitMessage>" <RepositoryUrl>')
+  .command("set <CommitMessage> <RepositoryUrl>")
   .description("Add a new TODO task");
 
 program.command("branch <BranchName>").description("Mark commands done");
