@@ -26,14 +26,13 @@ const push = async () => {
 //Format - push "commitMessage" url
 
 const set = async () => {
-  var url = process.argv[3];
+  var url = process.argv[4];
+  var commitMessage = process.argv[3];
   const newFirstCommand = "git init";
   const newSecondCommand = "git add .";
   const newThirdCommand = `git commit -m "${commitMessage}"`;
   const newFourthCommand = "git remote add origin" + url;
   const newFifthCommand = "git push origin " + currentBranch;
-  var url = process.argv[4];
-  var commitMessage = process.argv[3];
   console.log(commitMessage);
   console.log(newFirstCommand);
   console.log(newThirdCommand);
