@@ -128,6 +128,8 @@ program
 
 program.command("branch <BranchName>").description("Mark commands done");
 
-program.command("send <BranchName> <CommitMessage>").description("Another One");
+// still under development - currently the bugs are being fixed, will be fixed in the new release
+
+program.command("send <BranchName> <CommitMessage>").description("Push ");
 
 program.parse();
