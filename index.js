@@ -32,6 +32,7 @@ console.log(secondCommand);
 // 6) Can use it also directly from vs code rather than CLI by making a file saving that command and writing commmit messages.
 // 7) Create custom cli through github clone and also make it in it rush(cargo) and golang
 
+// To push an existing repository
 const push = async () => {
   await shell.exec(firstCommand);
   await shell.exec(secondCommand);
