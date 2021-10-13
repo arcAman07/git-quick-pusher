@@ -56,6 +56,4 @@ module.exports = quick();
 
 // module.exports = push();
 
-set();
-
 module.exports = set();
