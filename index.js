@@ -122,7 +122,7 @@ if (process.argv[2] === "--help") {
 }
 program
   .command("push <CommitMessage>")
-  .description(chalk.red("List all the TODO tasks"));
+  .description(chalk.magenta("List all the TODO tasks"));
 
 program
   .command("set <CommitMessage> <RepositoryUrl>")
