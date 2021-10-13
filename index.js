@@ -27,7 +27,7 @@ const push = async () => {
   commitMessage = process.argv[3];
   const firstCommand = "git add .";
   const secondCommand = `git commit -m "${commitMessage}"`;
-  const thirdCommand = "git push origin master";
+  const thirdCommand = "git push origin" + currentBranch;
   await shell.exec(firstCommand);
   await shell.exec(secondCommand);
   await shell.exec(thirdCommand);
@@ -43,6 +43,7 @@ const set = async () => {
   const newThirdCommand = `git commit -m "${commitMessage}"`;
   const newFourthCommand = "git remote add origin" + url;
   const newFifthCommand = "git push origin master";
+  currentBranch = "master";
   var url = process.argv[4];
   var commitMessage = process.argv[3];
   console.log(commitMessage);
