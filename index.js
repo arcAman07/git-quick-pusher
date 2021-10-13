@@ -4,7 +4,6 @@ const Color = require("color");
 var argv = require("optimist").argv;
 // default branch set is "master"
 var currentBranch = "master";
-shell.echo("hello world");
 console.log(process.argv);
 const length = process.argv.length;
 var commitMessage = process.argv[2];
