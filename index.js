@@ -12,8 +12,11 @@ console.log(commitMessage);
 // while remote add origin has been set
 const firstCommand = "git add .";
 const secondCommand = `git commit -m "${commitMessage}"`;
-for (i = 0; i < 14; i++) {}
 const thirdCommand = "git push origin master";
+
+const newFirstCommand = "git init";
+const newSecondCommand = firstCommand;
+const newThirdCommand = secondCommand;
 
 //
 
