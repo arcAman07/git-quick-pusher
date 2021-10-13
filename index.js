@@ -57,4 +57,4 @@ module.exports = quick();
 // module.exports = push();
 console.log("Heya");
 
-module.exports = set();
+// module.exports = set();
