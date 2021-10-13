@@ -1,6 +1,7 @@
 #! /usr/bin/env node
 const shell = require("shelljs");
 const Color = require("color");
+var argv = require("optimist").argv;
 // default branch set is "master"
 var currentBranch = "master";
 shell.echo("hello world");
@@ -32,17 +33,24 @@ const quick = async () => {
 // First time - connect git to github repository
 //Format - push "commitMessage" url
 
-const push = async () => {
-  currentBranch = await process.argv[1];
-  console.log(currentBranch);
-};
+// const push = async () => {
+//   currentBranch = await process.argv[1];
+//   console.log(currentBranch);
+// };
 
 // To set the current branch of the working repo
 // Format - set branchName(currentBranch)
 // default working branch is "master"
 
+const set = async () => {
+  currentBranch = await process.argv[1];
+  console.log(currentBranch);
+};
+
 // gitquickpusher-1.0.0.tgz
 
 module.exports = quick();
 
-module.exports = push();
+// module.exports = push();
+
+module.exports = set();
