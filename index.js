@@ -51,11 +51,16 @@ const set = async () => {
 
 const branch = async () => {
   // currentBranch = await process.argv[0];
+  const firstBranchCommand = "git add .";
   currentBranch = await process.argv[3];
-  const branchCommand = "git branch " + currentBranch;
-  const secondBranchCommand = "git push -u origin " + currentBranch;
-  await shell.exec(branchCommand);
-  // await shell.exec(secondBranchCommand);
+  const secondBranchCommand = "git branch " + currentBranch;
+  commitMessage = await process.argv[4];
+  const thirdBranchCommand = `git commit -m "${commitMessage}"`;
+  const fourthBranchCommand = "git push -u origin " + currentBranch;
+  await shell.exec(firstBranchCommand);
+  await shell.exec(secondBranchCommand);
+  await shell.exec(thirdBranchCommand);
+  await shell.exec(fourthBranchCommand);
   console.log(currentBranch);
 };
 
