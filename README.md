@@ -21,7 +21,7 @@
 
 3. To create a new branch in your local github repository and push your code to it in a single line.
 
-4. To push your code to an existing branch other than the "master" branch in a single line.
+4. To push your code to an existing branch other than the "master" branch in a single line( under development, some bugs are being fixed ).
 
 5. More Future Updates will be added as stated in UPCOMING.md and stay tuned for it.
 
@@ -81,7 +81,7 @@ Syntax
 quick branch <Branch Name> "<Commit Message>"
 ```
 
-4). To push your code to an already existing branch other than the "master" branch:
+4). To push your code to an already existing branch other than the "master" branch( under development, some bugs are being fixed ):
 
 Syntax
 
@@ -100,14 +100,24 @@ quick --help
 ## In-Action
 
 1). To connect git to your local github repository for the first time( default branch is set to be "master"):
+![image](https://user-images.githubusercontent.com/76823502/137325855-690239b4-859b-4948-9e03-db25e9f9c718.png)
+
 
 2). To commit and push code to your local existing github repository( default branch is set to be "master"):
+![image](https://user-images.githubusercontent.com/76823502/137324170-8e756186-3386-445e-9e13-2d9ac8989618.png)
+
 
 3). To create a new branch in your github repository and push your code to it:
+![image](https://user-images.githubusercontent.com/76823502/137324337-2a2b32d9-4e5f-457b-93de-72de160edebc.png)
 
-4). To push your code to an already existing branch other than the "master" branch:
+
+4). To push your code to an already existing branch other than the "master" branch( under development, some bugs are being fixed ):
+![image](https://user-images.githubusercontent.com/76823502/137326204-62c18d67-9b62-406e-ae50-90577a45c5f6.png)
+
 
 5). To get help about the CLI commands in this package:
+![image](https://user-images.githubusercontent.com/76823502/137324483-9b5a2c1a-e6c0-4255-b39a-448235298192.png)
+
 
 ## Pre-Requisites
 
