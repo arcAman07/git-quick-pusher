@@ -50,3 +50,9 @@ npm i gitquickpusher
 ## Usage
 
 ## Pre-Requisites
+
+1. Node js installed globally in your local system.
+
+2. Presence of any text-editors like Atom, Goland, VS Code, etc .
+
+3. Initialise npm in your current project and then install the package in your local system.
