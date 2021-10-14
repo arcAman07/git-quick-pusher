@@ -49,12 +49,12 @@ npm i gitquickpusher
 
 ## Usage
 
-1). To connect git to your local github repository:
+1). To connect git to your local github repository for the first time:
 
-Syntax
+Syntax( default branch is set to be "master")
 
 ```
-quick push <>
+quick push <Commit Message> <Repository Url>
 ```
 
 1). To connect git to your local github repository:
