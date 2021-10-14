@@ -114,3 +114,5 @@ quick --help
 2. If you have any feedbacks or cool things you want to add to this package, raise an issue and I will surely look into it.
 
 3. If you want to contribute to this package check out the the CONTRIBUTING.md file in this repository.
+
+4. Also you can check out the UPCOMING.md file in this repository to know about the future additions and updates which I am planning to make to this package.
