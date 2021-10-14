@@ -17,7 +17,9 @@
     "github",
     "push",
     "commit",
-    "branch"
+    "branch",
+    "quick",
+    "changes"
   ],
   "author": "Aman Sharma",
   "license": "MIT",
