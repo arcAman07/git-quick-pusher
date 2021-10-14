@@ -7,7 +7,6 @@ var currentBranch = "master";
 
 // Here 0 signifies that there is only one branch that is master and 1 signifies other alternate branches have been set
 var alternateBranchExists = 0;
-console.log(process.argv);
 // Commands
 // 1)git add .
 // 2)git commit -m ""
@@ -35,10 +34,6 @@ const set = async () => {
   const newThirdCommand = `git commit -m "${commitMessage}"`;
   const newFourthCommand = "git remote add origin " + url;
   const newFifthCommand = "git push origin " + currentBranch;
-  console.log(commitMessage);
-  console.log(newFirstCommand);
-  console.log(newThirdCommand);
-  console.log(newFourthCommand);
   await shell.exec(newFirstCommand);
   await shell.exec(newSecondCommand);
   await shell.exec(newThirdCommand);
@@ -62,7 +57,6 @@ const branch = async () => {
   await shell.exec(secondBranchCommand);
   await shell.exec(thirdBranchCommand);
   await shell.exec(fourthBranchCommand);
-  console.log(currentBranch);
 };
 
 const help = async () => {
@@ -92,7 +86,7 @@ const help = async () => {
     .command("send <BranchName> <CommitMessage>")
     .description(
       chalk.magenta(
-        "Push your code to an already existing branch in your repository"
+        "Push your code to an already existing branch in your repository other than the 'master' branch"
       )
     );
 
@@ -108,8 +102,6 @@ const send = async () => {
   const firstSendCommand = "git add .";
   const secondSendCommand = `git commit -m "${commitMessage}"`;
   const thirdSendCommand = "git push origin " + currentBranch;
-  console.log(secondSendCommand);
-  console.log(thirdSendCommand);
   await shell.exec(firstSendCommand);
   await shell.exec(secondSendCommand);
   await shell.exec(thirdSendCommand);
