@@ -1,1 +1,1 @@
-Setup the documentation
+# Git Quick Pusher
