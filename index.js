@@ -33,7 +33,7 @@ const set = async () => {
   const newSecondCommand = "git add .";
   const newThirdCommand = `git commit -m "${commitMessage}"`;
   const newFourthCommand = "git remote add origin " + url;
-  const newFifthCommand = "git push origin " + currentBranch;
+  const newFifthCommand = "git push -f origin " + currentBranch;
   await shell.exec(newFirstCommand);
   await shell.exec(newSecondCommand);
   await shell.exec(newThirdCommand);
@@ -101,7 +101,7 @@ const send = async () => {
   commitMessage = await process.argv[4];
   const firstSendCommand = "git add .";
   const secondSendCommand = `git commit -m "${commitMessage}"`;
-  const thirdSendCommand = "git push origin " + currentBranch;
+  const thirdSendCommand = "git push -f origin " + currentBranch;
   await shell.exec(firstSendCommand);
   await shell.exec(secondSendCommand);
   await shell.exec(thirdSendCommand);
