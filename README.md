@@ -15,7 +15,15 @@
 
 ## Features
 
-1.
+1. To connect git to your local github repository in a single line.
+
+2. To push your code to your local github repository in a single line.
+
+3. To create a new branch in your local github repository and push your code to it in a single line.
+
+4. To push your code to an existing branch other than the "master" branch in a single line.
+
+5. More Future Updates will be added as stated in UPCOMING.md and stay tuned for it.
 
 ## Installation
 
@@ -98,3 +106,11 @@ quick --help
 2. Presence of any text-editors like Atom, Goland, VS Code, etc .
 
 3. Initialise npm in your current project and then install the package in your local system.
+
+## CONTRIBUTIONS
+
+Check out the CONTRIBUTING.md file to read about the contribution guidelines of this package.
+
+## WRAP-UP
+
+If you enjoyed this package and our using it in your day to day life for your projects, do star the repo.
