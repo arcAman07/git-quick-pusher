@@ -49,6 +49,8 @@ npm i gitquickpusher
 
 ## Usage
 
+## In-Action
+
 ## Pre-Requisites
 
 1. Node js installed globally in your local system.
