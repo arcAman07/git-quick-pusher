@@ -81,7 +81,7 @@ Syntax
 quick branch <Branch Name> "<Commit Message>"
 ```
 
-4). To push your code to an already existing branch other than the "master" branch:
+4). To push your code to an already existing branch other than the "master" branch( under development, some bugs are being fixed ):
 
 Syntax
 
