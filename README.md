@@ -107,7 +107,7 @@ quick --help
 
 3. Initialise npm in your current project and then install the package in your local system.
 
-## CONTRIBUTIONS
+## Contributions
 
 Check out the CONTRIBUTING.md file to read about the contribution guidelines of this package.
 
