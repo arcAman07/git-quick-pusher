@@ -101,7 +101,7 @@ const send = async () => {
   commitMessage = await process.argv[4];
   const firstSendCommand = "git add .";
   const secondSendCommand = `git commit -m "${commitMessage}"`;
-  const thirdSendCommand = "git push -f origin " + currentBranch;
+  const thirdSendCommand = "git push -u origin " + currentBranch;
   await shell.exec(firstSendCommand);
   await shell.exec(secondSendCommand);
   await shell.exec(thirdSendCommand);
