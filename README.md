@@ -54,23 +54,31 @@ npm i gitquickpusher
 Syntax( default branch is set to be "master")
 
 ```
-quick push <Commit Message> <Repository Url>
+quick set "<Commit Message>" <Repository Url>
 ```
 
-1). To connect git to your local github repository:
+2). To commit and push code to your local existing github repository:
+
+Syntax( default branch is set to be "master")
+
+```
+quick push "<Commit Message>"
+```
+
+3). To create a new branch in your github repository and push your code to it:
 
 Syntax
 
 ```
-
+quick branch <Branch Name> "<Commit Message>"
 ```
 
-1). To connect git to your local github repository:
+4). To push your code to an already existing branch other than the "master" branch:
 
 Syntax
 
 ```
-
+quick send <Branch Name> "<Commit Message>"
 ```
 
 ## In-Action
