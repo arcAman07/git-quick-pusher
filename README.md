@@ -111,6 +111,6 @@ quick --help
 
 Check out the CONTRIBUTING.md file to read about the contribution guidelines of this package.
 
-## WRAP-UP
+## Wrap-Up
 
 If you enjoyed this package and our using it in your day to day life for your projects, do star the repo.
