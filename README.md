@@ -11,7 +11,7 @@
 [![Issues](https://img.shields.io/github/issues/arcAman07/git-quick-pusher?style=for-the-badge&label=Issues)](https://github.com/arcAman07/git-quick-pusher)
 [![Watchers](https://img.shields.io/github/watchers/arcAman07/git-quick-pusher?label=Watch&style=for-the-badge)](https://github.com/arcAman07/git-quick-pusher/)
 
-<h3>A simple easy to use npm package(CLI tools) to push your code into your github repositories in a single line.</h3>
+<h3>A simple easy to use npm package (CLI tools) to push your code into your github repositories in a single line.</h3>
 
 ## Features
 
