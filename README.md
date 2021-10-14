@@ -112,6 +112,8 @@ quick --help
 4). To push your code to an already existing branch other than the "master" branch:
 
 5). To get help about the CLI commands in this package:
+![image](https://user-images.githubusercontent.com/76823502/137324483-9b5a2c1a-e6c0-4255-b39a-448235298192.png)
+
 
 ## Pre-Requisites
 
