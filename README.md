@@ -10,3 +10,5 @@
 [![Top](https://img.shields.io/github/languages/top/arcAman07/git-quick-pusher?style=for-the-badge&label=Top%20Languages)](https://github.com/arcAman07/git-quick-pusher)
 [![Issues](https://img.shields.io/github/issues/arcAman07/git-quick-pusher?style=for-the-badge&label=Issues)](https://github.com/arcAman07/git-quick-pusher)
 [![Watchers](https://img.shields.io/github/watchers/arcAman07/git-quick-pusher?label=Watch&style=for-the-badge)](https://github.com/arcAman07/git-quick-pusher/)
+
+A simple easy to use command line tool to push your code to your github repositories in a single line.
