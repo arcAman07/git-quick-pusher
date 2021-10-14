@@ -113,4 +113,6 @@ Check out the CONTRIBUTING.md file to read about the contribution guidelines of 
 
 ## Wrap-Up
 
-If you enjoyed this package and our using it in your day to day life for your projects, do star the repo.
+1. If you enjoyed this package and our using it in your day to day life for your projects, do star the repo.
+
+2.
