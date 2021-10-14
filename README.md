@@ -81,6 +81,14 @@ Syntax
 quick send <Branch Name> "<Commit Message>"
 ```
 
+5). To get help about the CLI commands in this package:
+
+Syntax
+
+```
+quick --help
+```
+
 ## In-Action
 
 ## Pre-Requisites
