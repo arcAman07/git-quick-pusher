@@ -49,7 +49,29 @@ npm i gitquickpusher
 
 ## Usage
 
-1). To
+1). To connect git to your local github repository:
+
+Syntax
+
+```
+quick push <>
+```
+
+1). To connect git to your local github repository:
+
+Syntax
+
+```
+
+```
+
+1). To connect git to your local github repository:
+
+Syntax
+
+```
+
+```
 
 ## In-Action
 
