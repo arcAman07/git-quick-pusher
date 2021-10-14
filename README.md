@@ -109,4 +109,8 @@ quick --help
 
 ## Contributions
 
-1.  If you liked the package and you are using it in your day to day life for your projects, do star the repo.
+1. If you liked the package and you are using it in your day to day life for your projects, do star the repo.
+
+2. If you have any feedbacks or cool things you want to add to this package, raise an issue and I will surely look into it.
+
+3) If you want to contribute to this package check out the the CONTRIBUTING.md file in this repository.
