@@ -102,8 +102,12 @@ quick --help
 1). To connect git to your local github repository for the first time( default branch is set to be "master"):
 
 2). To commit and push code to your local existing github repository( default branch is set to be "master"):
+![image](https://user-images.githubusercontent.com/76823502/137324170-8e756186-3386-445e-9e13-2d9ac8989618.png)
+
 
 3). To create a new branch in your github repository and push your code to it:
+![image](https://user-images.githubusercontent.com/76823502/137324337-2a2b32d9-4e5f-457b-93de-72de160edebc.png)
+
 
 4). To push your code to an already existing branch other than the "master" branch:
 
