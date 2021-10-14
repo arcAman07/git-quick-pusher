@@ -14,3 +14,11 @@
 <h3>A simple easy to use npm package(CLI tools) to push your code into your github repositories in a single line.</h3>
 
 ## Features
+
+1.
+
+## Installation
+
+<h3> There are two ways of installing and using this package(CLI tool): </h3>
+
+1.
