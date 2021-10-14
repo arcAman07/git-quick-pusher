@@ -1,6 +1,6 @@
 {
   "name": "gitquickpusher",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "A simple easy to use command line tool to push your code to your github repositories in a single line.",
   "main": "index.js",
   "preferGlobal": true,
