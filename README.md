@@ -111,7 +111,9 @@ quick --help
 ![image](https://user-images.githubusercontent.com/76823502/137324337-2a2b32d9-4e5f-457b-93de-72de160edebc.png)
 
 
-4). To push your code to an already existing branch other than the "master" branch:
+4). To push your code to an already existing branch other than the "master" branch( under development, some bugs are being fixed ):
+![image](https://user-images.githubusercontent.com/76823502/137326204-62c18d67-9b62-406e-ae50-90577a45c5f6.png)
+
 
 5). To get help about the CLI commands in this package:
 ![image](https://user-images.githubusercontent.com/76823502/137324483-9b5a2c1a-e6c0-4255-b39a-448235298192.png)
