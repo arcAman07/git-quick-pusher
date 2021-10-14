@@ -21,4 +21,22 @@
 
 <h3> There are two ways of installing and using this package( CLI tool): </h3>
 
-1.
+1).
+
+Clone the repository:
+
+```
+git clone https://github.com/arcAman07/git-quick-pusher.git
+```
+
+Install the dependencies:
+
+```
+npm i
+```
+
+Install the package globally on your machine:
+
+```
+npm i -g
+```
