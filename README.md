@@ -21,7 +21,7 @@
 
 <h3> There are two ways of installing and using this package( CLI tool): </h3>
 
-1).
+1). As a CLI tool golbally in your system
 
 Clone the repository:
 
@@ -40,3 +40,11 @@ Install the package globally on your machine:
 ```
 npm i -g
 ```
+
+2). From npm as a package installed as a dependency
+
+```
+npm i gitquickpusher
+```
+
+## Usage
