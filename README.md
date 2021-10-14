@@ -99,6 +99,16 @@ quick --help
 
 ## In-Action
 
+1). To connect git to your local github repository for the first time( default branch is set to be "master"):
+
+2). To commit and push code to your local existing github repository( default branch is set to be "master"):
+
+3). To create a new branch in your github repository and push your code to it:
+
+4). To push your code to an already existing branch other than the "master" branch:
+
+5). To get help about the CLI commands in this package:
+
 ## Pre-Requisites
 
 1. Node js installed globally in your local system.
