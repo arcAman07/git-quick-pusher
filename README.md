@@ -109,10 +109,4 @@ quick --help
 
 ## Contributions
 
-Check out the CONTRIBUTING.md file to read about the contribution guidelines of this package.
-
-## Wrap-Up
-
-1. If you enjoyed this package and our using it in your day to day life for your projects, do star the repo.
-
-2.
+1.  If you liked the package and you are using it in your day to day life for your projects, do star the repo.
