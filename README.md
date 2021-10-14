@@ -49,6 +49,8 @@ npm i gitquickpusher
 
 ## Usage
 
+1). To
+
 ## In-Action
 
 ## Pre-Requisites
