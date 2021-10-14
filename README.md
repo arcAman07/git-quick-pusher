@@ -21,7 +21,7 @@
 
 3. To create a new branch in your local github repository and push your code to it in a single line.
 
-4. To push your code to an existing branch other than the "master" branch in a single line.
+4. To push your code to an existing branch other than the "master" branch in a single line( under development, some bugs are being fixed ).
 
 5. More Future Updates will be added as stated in UPCOMING.md and stay tuned for it.
 
