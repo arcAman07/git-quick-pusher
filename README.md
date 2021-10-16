@@ -27,7 +27,7 @@
 
 ## Installation
 
-<h3> There are two ways of installing and using this package( CLI tool): </h3>
+<h3> There are two ways of installing and using this package( CLI tool ): </h3>
 
 1). As a Command Line Interface (CLI) tool globally in your system
 
